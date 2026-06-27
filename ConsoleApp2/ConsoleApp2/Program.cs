@@ -7,21 +7,21 @@ namespace ConsoleApp2
 {
     internal class Program
     {
-            public static void operation(int i , int y )
-            {
-                Console.WriteLine($"Addition =  {i + y}");
-                Console.WriteLine($"Difference  {i - y}");
-                Console.WriteLine($"Product =  {i * y}");
-                Console.WriteLine($"Division =  {i / y}");
-            }
+            //public static void operation(int i , int y )
+            //{
+            //    Console.WriteLine($"Addition =  {i + y}");
+            //    Console.WriteLine($"Difference  {i - y}");
+            //    Console.WriteLine($"Product =  {i * y}");
+            //    Console.WriteLine($"Division =  {i / y}");
+            //}
               
-            public static void operation(double i , double y )
-            {
-                Console.WriteLine($"Addition =  {i + y}");
-                Console.WriteLine($"Difference  {i - y}");
-                Console.WriteLine($"Product =  {i * y}");
-                Console.WriteLine($"Division =  {i / y}");
-            }
+            //public static void operation(double i , double y )
+            //{
+            //    Console.WriteLine($"Addition =  {i + y}");
+            //    Console.WriteLine($"Difference  {i - y}");
+            //    Console.WriteLine($"Product =  {i * y}");
+            //    Console.WriteLine($"Division =  {i / y}");
+            //}
         static void Main(string[] args)
         {
             ////Console.WriteLine("Hello, \rWorld!");
@@ -81,18 +81,84 @@ namespace ConsoleApp2
             //        Console.Write(seating[i,j]+ "\t");
             //    }
             //    Console.WriteLine("\n");
-                
-            
+
+
             //}
 
 
             //METHOD OVERLOADING
 
 
-            operation(10.2, 2.3);
+            //operation(10.2, 2.3);
+
+
+
+
+            //<---------------------------------------------------Day-3------------------------------------------------------->
+
+
+
+            //BASIC OBJECT AND CLASS IMPLEMENTATION
+
+            //Human human = new Human { name ="Chaitanya"};
+
+            // human.Eat();
+            // human.Sleep();
+
+            // Human human2 = new Human { name = "Dhruv" };
+
+            // human2.Eat();
+            // human2.Sleep();
+
+
+
+
+
+            //CONSTRUCTOR IMPLEMENTATION
+
+            Students st = new Students("Chaitanya", 20);
+            Students st2 = new Students("Dhruv", 22);
+
 
 
             Console.ReadKey();
+
+        }
+    }
+
+    //public class Human
+    //{
+    //    public string? name;
+
+    //    public void Eat()
+    //    {
+    //        Console.WriteLine($"{name} is eating");
+
+    //    }
+
+    //    public void Sleep()
+    //    {
+    //        Console.WriteLine($"{name} is sleeping");
+
+    //    }
+    //}
+
+    public class Students 
+    {
+        public string? name;
+        public int age;
+       public  Students(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+
+            Data(name, age);
+
+        }
+
+        void Data(string name, int age)
+        {
+            Console.WriteLine($"Name of the Student : {name } \n Age : {age}");
         }
     }
 }
