@@ -1,7 +1,11 @@
 ﻿using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Net.Sockets;
 using System.Runtime.Intrinsics.X86;
+using System.Security.Cryptography.X509Certificates;
+using System.Transactions;
+using System.Xml;
 
 namespace ConsoleApp2
 {
@@ -116,15 +120,41 @@ namespace ConsoleApp2
 
             //CONSTRUCTOR IMPLEMENTATION
 
-            Students st = new Students("Chaitanya", 20);
-            Students st2 = new Students("Dhruv", 22);
+            //Students st = new Students("Chaitanya", 20);
+            //Students st2 = new Students("Dhruv", 22);
 
 
+
+            //INHERITANCE IMPLEMENTATION
+
+
+            //Dog dog = new();
+
+            //dog.walk();
+            //dog.speak();
+
+            //Cat cat = new();
+
+            //cat.walk();
+            //cat.speak();
+
+           
 
             Console.ReadKey();
 
         }
     }
+
+            
+        
+
+    
+
+
+
+
+
+
 
     //public class Human
     //{
@@ -143,22 +173,55 @@ namespace ConsoleApp2
     //    }
     //}
 
-    public class Students 
-    {
-        public string? name;
-        public int age;
-       public  Students(string name, int age)
-        {
-            this.name = name;
-            this.age = age;
+    //public class Students 
+    //{
+    //    public string? name;
+    //    public int age;
+    //   public  Students(string name, int age)
+    //    {
+    //        this.name = name;
+    //        this.age = age;
 
-            Data(name, age);
+    //        Data(name, age);
 
-        }
+    //    }
 
-        void Data(string name, int age)
-        {
-            Console.WriteLine($"Name of the Student : {name } \n Age : {age}");
-        }
-    }
+    //    void Data(string name, int age)
+    //    {
+    //        Console.WriteLine($"Name of the Student : {name } \n Age : {age}");
+    //    }
+    //}
+
+//    public class Animal
+//    {
+    
+//public void walk()
+//        {
+//            Console.WriteLine("Animal is walking");
+//        }
+
+//    }
+
+//    public class Dog : Animal 
+//    {
+//        public void speak()
+//        {
+//            Console.WriteLine("Dog Barks");
+//        }
+
+
+//    }
+
+//    public class Cat : Animal
+//    {
+//        public void speak()
+//        {
+//            Console.WriteLine("Cat Meow");
+//        }
+
+        
+
+//    }
+    
+
 }
